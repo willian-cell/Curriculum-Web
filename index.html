@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willian B. Oliveira - Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+
+    <style>
+            h2 {
+        font-size: 1.8rem;
+        color: #00c6ff;
+        text-shadow: 0 0 10px #0072ff;
+        margin-bottom: 10px;
+        transform: translateX(-100px); /* Começa fora da tela à esquerda */
+        animation: slideInLeft 1.5s ease-out forwards;
+        animation-delay: 0.5s; /* Adiciona um leve atraso */
+    }
+
+        /* Efeito hover no h2 */
+    h2:hover {
+        transform: scale(1.1);
+    }
+
+        /* Estilo para o parágrafo */
+    p {
+        font-size: 1.2rem;
+        opacity: 0.8;
+        transition: opacity 0.3s ease, color 0.3s ease;
+    }
+
+    /* Efeito hover no parágrafo */
+    p:hover {
+        opacity: 1;
+        color: #00c6ff;
+    }
+
+
+/* Efeito de slide-in no parágrafo */
+p {
+    font-size: 1.2rem;
+    opacity: 0;
+    transform: translateY(100px); /* Começa fora da tela abaixo */
+    animation: slideInUp 1.5s ease-out forwards;
+    animation-delay: 1s; /* Animação começa após o h2 */
+}
+
+/* Animação de deslizar da esquerda para a posição final */
+@keyframes slideInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Volta à posição normal */
+    }
+}
+
+/* Animação de deslizar de baixo para cima */
+@keyframes slideInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Volta à posição normal */
+    }
+}
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Willian</a></li>
+            <li><a href="endereco.html">Endereço</a></li>
+            <li><a href="experiencias.html">Experiências</a></li>
+            <li><a href="formacao.html">Formação Acadêmica</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header class="container">
+        <div class="row align-items-center">
+            <!-- Seção de Introdução -->
+            <div class="col-md-6 text-center text-md-left">
+                <h1 id="titulo">
+                    <span class="letraP">P</span>ortf<span class="letraO">ó</span>lio
+                  </h1>
+                <h2>Willian B. Oliveira</h2>
+                <p>Web Developer</p>
+            </div>
+    
+            <!-- Foto de Perfil -->
+            <div class="col-md-6 text-center">
+                <img src="eu.jpg" alt="Profile Picture" class="img-fluid rounded-circle profile-img">
+            </div>
+        </div>
+    </header>
+
+        
+    <div class="swiper-container" data-aos="fade-right">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="carta1.jpg" alt="carta1"></div>
+            <div class="swiper-slide"><img src="carta2.jpg" alt="carta2"></div>
+            <div class="swiper-slide"><img src="carta3.jpg" alt="carta3"></div>
+            <div class="swiper-slide"><img src="carta4.jpg" alt="carta4"></div>
+            <div class="swiper-slide"><img src="trabalhador1.jpg" alt="carta5"></div>
+            <div class="swiper-slide"><img src="trabalhador2.jpg" alt="carta6"></div>
+            <div class="swiper-slide"><img src="trabalhador3.jpg" alt="carta7"></div>
+            <div class="swiper-slide"><img src="trabalhador4.jpg" alt="carta8"></div>
+            <div class="swiper-slide"><img src="app1.jpg" alt="carta9"></div>
+            <div class="swiper-slide"><img src="app2.jpg" alt="carta10"></div>
+            <div class="swiper-slide"><img src="app3.jpg" alt="carta11"></div>
+            <div class="swiper-slide"><img src="app4.jpg" alt="carta12"></div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200, // Duração do efeito
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

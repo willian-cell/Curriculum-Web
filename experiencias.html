@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willian B. Oliveira - Experiências</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #001f3f, #0074D9);
+            color: white;
+        }
+
+        nav {
+            background: #001f3f;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 40px 10px; /* Ajuste o padding para compensar o cabeçalho fixo */
+            margin-top: 10px; /* Espaço para o cabeçalho fixo */
+            text-align: center;
+        }
+
+        .intro h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .intro p {
+            font-size: 1.5em;
+            margin: 10px 0 0;
+        }
+
+        section.experiencias {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .experiencias {  
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 3rem auto;
+        padding: 2rem;
+        max-width: 900px;
+        background-color: opacity; /* 50% transparente */
+        border-radius: 12px;
+        box-shadow: 0 4px 8p (0, 0, 0, 0.1);
+        }
+
+        .experiencia {
+        width: 48%;
+        flex: 1 1 calc(33.333% - 20px); /* Três colunas por linha */
+        background-color: #09539d;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 1px 5px 10px rgb(25, 24, 24);
+        transition: transform 0.3s ease;
+
+        /* Centralizar o texto */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        }
+
+        .experiencia:hover {
+        transform: scale(1.02);
+        }
+
+        h2 {
+        font-size: 1.8rem;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        }
+
+        p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #ddd;
+        }
+
+        strong {
+        color: #fff;
+        }
+
+        @media (min-width: 768px) {
+        .experiencias {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+
+        /* Ajuste para dispositivos menores */
+        @media (max-width: 768px) {
+            .experiencia {
+                flex: 1 1 calc(50% - 20px); /* Duas colunas em tablets */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .experiencia {
+                flex: 1 1 100%; /* Uma coluna em dispositivos pequenos */
+            }
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Willian</a></li>
+            <li><a href="endereco.html">Endereço</a></li>
+            <li><a href="experiencias.html">Experiências</a></li>
+            <li><a href="formacao.html">Formação Acadêmica</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="intro">
+            <h1>Experiências Profissionais</h1>
+        </div>
+    </header>
+
+    <section class="experiencias circulo" data-aos="flip-right">
+        <div class="experiencia" data-aos="zoom-in">
+            <h2><i class="fas fa-code"></i> Desenvolvedor Frontend e Backend</h2>
+            <p><strong>Empresa:</strong> Escola do Futuro - GO</p>
+            <p><strong>Duração:</strong> Janeiro 2024 - Presente</p>
+            <p>Desenvolvimento de interfaces responsivas usando HTML, CSS e JavaScript.</p>
+            <p>Colaboração com equipes de design e backend para entregar soluções eficazes.</p>
+        </div>
+    
+        <div class="experiencia" data-aos="zoom-in">
+            <h2><i class="fas fa-laptop-code"></i> Desenvolvimento Web</h2>
+            <p><strong>Empresa:</strong> EFG - Sara Luiza Kubitschek</p>
+            <p><strong>Duração:</strong> Março 2024 - Presente</p>
+            <p>Assistência no desenvolvimento de aplicações web e manutenção de sites existentes.</p>
+            <p>Aprendizado em frameworks como React e Vue.js, Implementação de Bootstrap.</p>
+        </div>
+    
+        <div class="experiencia">
+            <h2><i class="fas fa-briefcase" data-aos="zoom-in"></i> Freelancer - Projetos Diversos</h2>
+            <p><strong>Duração:</strong> Janeiro 2022 - Outubro 2024</p>
+            <p>Desenvolvimento de sites personalizados para pequenos negócios.</p>
+            <p>Criação de soluções de e-commerce e blogs.</p>
+        </div>
+    
+        <div class="experiencia" data-aos="zoom-in">
+            <h2><i class="fas fa-briefcase"></i> Developer - Sistemas Mobile</h2>
+            <p><strong>Duração:</strong> Janeiro 2022 - Outubro 2024</p>
+            <p>Desenvolvimento de sistemas personalizados utilizando: Kotlin, Java, Swift, Python, SQL para pequenos negócios.</p>
+            <p>Desenvolvimento de Micro Sistemas.</p>
+        </div>
+    </section>
+
+      
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500, // Duração do efeito
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willian B. Oliveira - Formação Acadêmica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #001f3f, #0074D9);
+            color: white;
+        }
+
+        nav {
+            background: #001f3f;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #0074D9;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 100px 20px 50px; 
+            margin-top: 60px; 
+            text-align: center;
+        }
+
+        .intro h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .intro p {
+            font-size: 1.5em;
+            margin: 5px 0;
+        }
+
+        .formacao {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .formacao:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .formacao-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .formacao-item h2 {
+            margin: 0;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .formacao-item p {
+            font-size: 1em;
+            margin: 5px 0;
+        }
+
+        .icon-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #444;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .icon-img:hover {
+            transform: rotate(360deg);
+        }
+
+        .icone-curso {
+            padding: 10px;
+            border: 1px solid #ccc;
+            vertical-align: top;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #0074D9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+        }
+
+        .floating-image {
+            width: 100%;
+            max-width: 400px;
+            transition: transform 0.3s ease;
+            margin: 10px;
+        }
+
+        .floating-image:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Willian</a></li>
+            <li><a href="endereco.html">Endereço</a></li>
+            <li><a href="experiencias.html">Experiências</a></li>
+            <li><a href="formacao.html">Formação Acadêmica</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="intro">
+            <h1>Formação Acadêmica</h1>
+        </div>
+    </header>
+
+    <div class="formacao">
+        <div class="formacao-item">
+            <div class="icone-curso">
+                <img src="sistema.jpg" alt="icon" class="icon-img">
+            </div>
+            <div>
+                <h2>Tecnólogo em Sistemas Mobile</h2>
+                <p><strong>Instituição:</strong> Unopar</p>
+                <p><strong>Duração:</strong> Janeiro 2022 - Dezembro 2024</p>
+                <p>Formação com ênfase em desenvolvimento de software e análise de sistemas.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="formacao">
+        <div class="formacao-item">
+            <div class="icone-curso">
+                <img src="webmobile.png" alt="icon" class="icon-img">
+            </div>
+            <div>
+                <h2>Técnico em Desenvolvimento Web e Mobile</h2>
+                <p><strong>Instituição:</strong> EFG - GO</p>
+                <p><strong>Duração:</strong> Janeiro 2024 - Atualidade</p>
+                <p>Aprendizado em HTML, CSS, JavaScript, React e desenvolvimento de aplicações responsivas.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="formacao">
+        <div class="formacao-item">
+            <div class="icone-curso">
+                <img src="cienciadados.jpg" alt="icon" class="icon-img">
+            </div>
+            <div>
+                <h2>Técnico em Ciências de Dados</h2>
+                <p><strong>Instituição:</strong> EFG - GO</p>
+                <p><strong>Duração:</strong> Janeiro 2024 - Atualidade</p>
+                <p>Aprendizado em MySQL, Google Colab, DBServer, JSON, MongoDB, PowerBi.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="formacao">
+        <div class="formacao-item">
+            <div class="icone-curso">
+                <img src="python.jpg" alt="icon" class="icon-img">
+            </div>
+            <div>
+                <h2>Certificação em Python</h2>
+                <p><strong>Instituição:</strong> Escola do Futuro - GO</p>
+                <p><strong>Ano de Formação:</strong> 2023</p>
+                <p>Desenvolvimento de sistemas utilizando MySQL, PySimpleGui, Pandas, Matplotlib.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="formacao">
+        <div class="formacao-item">
+            <div>
+                <img src="todaslogos.jpg" alt="Mapa Ilustrativo" class="floating-image" style="border-radius: 15%;">
+            </div>
+            <div>
+                <img src="maislogos.jpg" alt="Mapa Ilustrativo" class="floating-image" style="border-radius: 15%; width: 350px;">
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

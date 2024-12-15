@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willian B. Oliveira - Contato</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #001f3f, #0074D9);
+            color: white;
+        }
+
+        nav {
+            background: #001f3f;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #0074D9;
+        }
+
+        header {
+            padding: 100px 20px 50px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .contato {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 10%;
+        }
+
+        .roda_pe {
+            background-color: #001f3f;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .social-logo {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-logo:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Bootstrap -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Willian</a></li>
+            <li><a href="endereco.html">Endereço</a></li>
+            <li><a href="experiencias.html">Experiências</a></li>
+            <li><a href="formacao.html">Formação Acadêmica</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="intro">
+            <h1 class="paper">Contato</h1>
+            <p>Entre em contato comigo!</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 contato" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="roda_pe">
+        <footer>
+            <a href="https://www.instagram.com/seu-perfil" target="_blank" rel="noopener">
+                <img src="instagram.jpg" alt="Instagram" class="social-logo">
+            </a>
+            <a href="https://www.facebook.com/seu-perfil" target="_blank" rel="noopener">
+                <img src="facebook.jpg" alt="Facebook" class="social-logo">
+            </a>
+            <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" rel="noopener">
+                <img src="linkedin.jpg" alt="LinkedIn" class="social-logo">
+            </a>
+            <a href="https://github.com/seu-usuario" target="_blank" rel="noopener">
+                <img src="git.jpeg" alt="GitHub" class="social-logo">
+            </a>
+            <a href="https://wa.me/seu-numero" target="_blank" rel="noopener">
+                <img src="whatsap.jpg" alt="WhatsApp" class="social-logo">
+            </a>
+            <a href="https://www.sololearn.com" target="_blank" rel="noopener">
+                <img src="sololearn.png" alt="Sololearn" class="social-logo">
+            </a>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js e jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 500,
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

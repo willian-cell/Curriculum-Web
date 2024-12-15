@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #001f3f, #0074D9);
+    color: white;
+}
+
+nav {
+    background: #001f3f;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+nav ul li {
+    margin: 0 15px;
+    text-decoration: none;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: none; /* Remove o sublinhado */
+    
+}
+
+/* Header Styling */
+header {
+    margin-top: 60px; /* Espaço para cabeçalho fixo */
+    padding: 50px 20px;
+    text-decoration: none;
+    width: 100%; /* Garante que o header ocupe toda a largura */
+    box-sizing: border-box; /* Inclui padding dentro da largura total */
+}
+
+/* Estilo da Imagem de Perfil */
+.profile-img {
+    width: 30%;  /* Define um tamanho menor para a imagem */
+    height: auto; /* Mantém a proporção original da imagem */
+    border-radius: 50%;  /* Deixa a imagem circular */
+    object-fit: cover;  /* Garante que a imagem preencha o círculo sem distorcer */
+    margin-top: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza a transição */
+    cursor: pointer; /* Indica que a imagem é interativa */
+}
+
+/* Animação ao passar o mouse */
+.profile-img:hover {
+    transform: scale(1.3); /* Aumenta a imagem suavemente */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra elegante */
+}
+
+/* Animação ao clicar */
+.profile-img:active {
+    transform: scale(1.1); /* Leve efeito de clique */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Reduz a sombra */
+}
+
+
+
+/* Ajustes de Texto */
+h1, h2 {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    h1, h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .profile-img {
+        max-width: 150px;
+    }
+}
+
+
+#portifólio {
+    text-align: center;
+    margin-top: 20px; /* Ajuste conforme necessário */
+}
+
+#portifólio h1 {
+    font-size: 2em; /* Tamanho maior para destaque */
+    margin: 0;
+    padding: 10px 0;
+}
+
+.profile-pic img {
+    width: 250px; /* ajuste o tamanho conforme necessário */
+    height: 250px;
+    border-radius: 50%; /* torna a imagem circular */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* adiciona a transição */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra inicial */
+}
+
+.profile-pic:hover img {
+    transform: scale(1.1) rotate(5deg); /* aumenta o tamanho e gira ligeiramente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* aumenta a sombra durante o hover */
+}
+
+
+.intro {
+    max-width: 50%;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+.intro h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.intro p {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+}
+
+.profile-pic {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+.dialog-box {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+
+.swiper-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.swiper-slide {
+    width: 150px;
+    height: 200px;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.swiper-slide:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.swiper-slide:hover img {
+    transform: scale(1.2);
+}
+
+
+/* Animação de rotação para a letra P */
+.letraP {
+    display: inline-block;
+    animation: girar 4s infinite linear;
+  }
+  
+  /* Animação de flip vertical para a letra ó */
+  .letraO {
+    display: inline-block;
+    animation: flipVertical 6s infinite linear;
+  }
+  
+  /* Keyframes para a rotação */
+  @keyframes girar {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Keyframes para o flip vertical */
+  @keyframes flipVertical {
+    0%, 100% {
+      transform: rotateX(0deg);
+    }
+    50% {
+      transform: rotateX(180deg);
+    }
+  }

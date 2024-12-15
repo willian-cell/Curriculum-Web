@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willian B. Oliveira - Formação Acadêmica</title>
+
+    <!-- Swiper CSS e Bootstrap -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #001f3f, #0074D9);
+            color: white;
+        }
+
+        nav {
+            background: #001f3f;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #0074D9;
+            text-decoration: none;
+
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 100px 20px 50px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .intro h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .intro p {
+            font-size: 1.5em;
+            margin: 5px 0;
+        }
+
+        .swiper {
+        margin: 30px auto;
+        max-width: 800px; /* Reduz o tamanho máximo do Swiper */
+        padding: 20px;
+        }
+
+        .swiper-slide {
+            width: 200px; /* Define a largura do card */
+            height: 300px; /* Define a altura do card */
+            border-radius: 10px;
+            border: 4px solid white; 
+            overflow: hidden;
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 1); 
+            transition: transform 0.3s;
+            margin: 0 10px; /* Espaçamento horizontal entre os cards */
+        }
+
+        .swiper-slide:hover {
+            transform: translateY(-5px);
+        }
+
+        .swiper-slide img {
+            width: 100%; 
+            height: 100%; /* Garante que a imagem preencha o card */
+            object-fit: cover; /* Mantém a proporção da imagem sem distorcer */
+            display: block;
+        }
+
+
+        .floating-container {
+            position: fixed;
+            right: 20px;
+            top: 150px;
+            width: 300px;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+            border: 4px solid #0074D9(42, 11, 217); 
+            overflow: hidden;
+            box-shadow: 
+            0 10px 20px rgba(0, 0, 0, 0.7), /* Sombra intensa */
+            0 0 30px rgba(5, 5, 5, 0.5), /* Brilho ciano suave */
+            inset 0 0 15px rgba(0, 0, 0, 0.2); /* Iluminação interna */
+            transition: transform 0.5s, box-shadow 0.5s;
+            cursor: pointer;
+            
+        }
+
+        .floating-image {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.3s;
+        }
+
+        .floating-image:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .floating-container {
+                position: static;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+           
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Willian</a></li>
+            <li><a href="endereco.html">Endereço</a></li>
+            <li><a href="experiencias.html">Experiências</a></li>
+            <li><a href="formacao.html">Formação Acadêmica</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="intro">
+            <h1>Endereço</h1>
+            <p>Santo Antônio do Descoberto - Goiás</p>
+        </div>
+    </header>
+
+    <div class="swiper mySwiper" data-aos="fade-right">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="https://www.google.com.br/maps/@-15.9426985,-48.2538913,3a,37.5y,251.87h,94.39t/data=!3m6!1e1!3m4!1sZjD23unymSBiN02_W30r4g!2e0!7i16384!8i8192" 
+                   target="_blank" rel="noopener noreferrer">
+                    <img src="santo.jpg" alt="Imagem de Santo Antônio">
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <a href="https://www.google.com.br/maps/place/Santuário+de+Santo+Antônio+do+Descoberto" 
+                   target="_blank" rel="noopener noreferrer">
+                    <img src="igreja.jpg" alt="Igreja em Santo Antônio">
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <a href="https://www.google.com.br/maps/@-15.9426072,-48.2543173,3a,37.5y,118.31h,83.89t" 
+                   target="_blank" rel="noopener noreferrer">
+                    <img src="entrada.jpg" alt="Entrada de Santo Antônio">
+                </a>
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <div class="swiper mySwiper" data-aos="fade-left">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="https://www.google.com.br/maps/@-15.9426985,-48.2538913,3a,37.5y,251.87h,94.39t/data=!3m6!1e1!3m4!1sZjD23unymSBiN02_W30r4g!2e0!7i16384!8i8192" 
+                   target="_blank" rel="noopener noreferrer">
+                    <img src="igreja.jpg" alt="Imagem de Santo Antônio">
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <a href="https://www.google.com.br/maps/place/Santuário+de+Santo+Antônio+do+Descoberto" 
+                   target="_blank" rel="noopener noreferrer">
+                    <img src="santo.jpg" alt="Igreja em Santo Antônio">
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <a href="https://www.google.com.br/maps/@-15.9426072,-48.2543173,3a,37.5y,118.31h,83.89t" 
+                   target="_blank" rel="noopener noreferrer">
+                    <img src="entrada.jpg" alt="Entrada de Santo Antônio">
+                </a>
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="swiper mySwiper" data-aos="fade-right">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="https://www.google.com.br/maps/@-15.9426985,-48.2538913,3a,37.5y,251.87h,94.39t/data=!3m6!1e1!3m4!1sZjD23unymSBiN02_W30r4g!2e0!7i16384!8i8192" 
+                   target="_blank" rel="noopener noreferrer">
+                    <img src="entrada.jpg" alt="Imagem de Santo Antônio">
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <a href="https://www.google.com.br/maps/place/Santuário+de+Santo+Antônio+do+Descoberto" 
+                   target="_blank" rel="noopener noreferrer">
+                    <img src="igreja.jpg" alt="Igreja em Santo Antônio">
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <a href="https://www.google.com.br/maps/@-15.9426072,-48.2543173,3a,37.5y,118.31h,83.89t" 
+                   target="_blank" rel="noopener noreferrer">
+                    <img src="santo.jpg" alt="Entrada de Santo Antônio">
+                </a>
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="floating-container">
+        <a href="https://www.google.com.br/maps/@-15.9558338,-48.2692181,15z" 
+           target="_blank" rel="noopener noreferrer">
+            <img src="mapa.png" alt="Mapa Ilustrativo" class="floating-image">
+        </a>
+        <div id="map" class="map-container"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        function initMap() {
+            var location = { lat: -15.9454, lng: -48.2571 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: location,
+            });
+            new google.maps.Marker({
+                position: location,
+                map: map,
+                title: 'Minha Residência',
+            });
+        }
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=SUA_API_KEY&callback=initMap"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500, // Duração do efeito
+        });
+    </script>
+</body>
+</html>
